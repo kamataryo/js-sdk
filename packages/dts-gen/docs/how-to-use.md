@@ -35,14 +35,14 @@ You have to grant `dts-gen` the `k:app_settings:read` scope to use OAuth authori
 ```bash
 // API token
 $ kintone-dts-gen --base-url https://***.cybozu.com \
-                 --api-token YourApiToken
+                 --api-token YourApiToken \
                  --app-id 12 \
                  --type-name SampleFields \
                  --namespace company.name.types \
                  -o sample-fields.d.ts
 // OAuth token
 $ kintone-dts-gen --base-url https://***.cybozu.com \
-                 --oauth-token YourOAuthToken
+                 --oauth-token YourOAuthToken \
                  --app-id 12 \
                  --type-name SampleFields \
                  --namespace company.name.types \
